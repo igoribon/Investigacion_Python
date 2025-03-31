@@ -14,17 +14,17 @@ print(suma(5, 3)) # 8
 
 # Argumentos por Nombre
 
-def saludar(nombre, apellido, edad):
+def saludar2(nombre, apellido, edad):
     return f"Hola, {nombre} {apellido}! Tienes {edad} años."
 
-print(saludar(nombre="David", apellido="Bustos", edad=25)) # Hola, David García! Tienes 25 años.
+print(saludar2(nombre="David", apellido="Bustos", edad=25)) # Hola, David García! Tienes 25 años.
 
 # Argumentos con valores por defecto    
 
-def saludar(nombre, apellido, edad=25):
+def saludar3(nombre, apellido, edad=25):
     return f"Hola, {nombre} {apellido}! Tienes {edad} años."
 
-print(saludar(nombre="David", apellido="Bustos")) # Hola, David García! Tienes 25 años.
+print(saludar3(nombre="David", apellido="Bustos")) # Hola, David García! Tienes 25 años.
 
 
 
@@ -208,4 +208,4 @@ info_usuario(nombre="Ana", edad=25, ciudad="Madrid")
 
 print("\nEjemplo combinado:")
 funcion_combinada("Python", "JavaScript", "SQL", 
-                 nombre="David", edad=30, experiencia="5 años")
+    nombre="David", edad=30, experiencia="5 años")
